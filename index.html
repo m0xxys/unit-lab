@@ -33,3 +33,123 @@
     <script src="app.js"></script>
 </body>
 </html>
+
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UFT-8">
+        <title>Unit Lab - конвертер единиц</title>
+        <meta name="viewport" content="width=devide-width, initial-scale=1">
+        <link   rel="stylesheet" href="style.css">
+     </head>
+     <body>
+        <div class="app">
+            <!-- шапка? -->
+             <header class="header">
+                <div class="header_left">
+                    <button class="header_menu.btn" id="menuToggle" aria-label="Открыть меню">
+                        ☰
+                     </button>
+                     <span class="header_logo">Unit Lab</span>
+                </div>
+
+                <div class="header_right">
+                    <input
+                    class="header_search"
+                    type="search"
+                    placeholder="Поиск по инструментам(пока ничего)"
+                    >
+
+                </div>
+             </header>
+
+             <!-- выдвижное меню -->
+              <aside class="sidebar" id="sidebar">
+                <div class="sidebar_inner">
+                    <h2 class="sidebar_title">Инструменты</h2>
+
+                    <button class="sidebar_link sidebar_link--active" data-tool="height">
+                        Рост: Футы + дюймы
+                    </button>
+
+                    <button class="sidebar_link" disabled>
+                        Вес(Скоро)
+                    </button>
+
+                    <button class="sidebar_link" disabled>
+                        Температура(Скоро)
+                    </button>
+
+                    <button class="sidebar_link" disabled>
+                        Время(ди нахуй)
+                    </button>
+                </div>
+              </aside>
+              <!-- ОСновной контент -->
+               <main class="main">
+                <section class="tools">
+                        <!-- гейский контракт том 1(конвертер роста) -->
+                         
+                        <article class="tool-card" data-tool="height">
+                            <h1 class="tool-card__title">Конвертер роста</h1>
+                            <p class="tool-card__subtitle">
+                                Переводит футы и дюймы в сантиметры.
+                            </p>
+
+                            <form class="tool-form" id="heightForm">
+                                <div class="tool-card__row">
+                                    <label class="field">
+                                        <span class="field__label"Футы></span>
+                                        <input class="feet" type="number" min="0" placeholder="Например 5">
+                                    </label>
+                                    
+                                    <label class="field">
+                                        <span class="field__label"Дюймы></span>
+                                        <input id="inches" type="number" min="0" placeholder="Например 4">
+                                    </label>
+                                    
+                                    <button type="submit" id="convertHeight" class="btn">
+                                        Посчитать
+                                    </button>
+                                </div>
+                            </form>
+
+                            <p id="heightResult" class="tool-card__Result">
+                                Введи значение и нажми "Посчитать"
+                            </p>
+                        </article>
+
+                        <!-- слоты -->
+                         <article class="tool-card tool-card--disabled">
+                            <h2 class="tool-card__title">Скоро: конвертер веса</h2>
+                            <p class="tool-card__subtitle">
+                                Фунты <> килограммы.
+                            </p>
+                         </article>
+
+                         <article class="tool-card tool-card--disabled">
+                            <h2 class="tool-card__title">Скоро: Температура</h2>
+                            <p class="tool-card__subtitle">
+                                Градусы Фаренгейта <> Цельсия.
+                            </p>
+                         </article>
+                </section>
+               </main>
+        </div>
+
+        <script src="app.js"></script>
+     </body>
+</html>
+     
+
+                    
+
+                           
+
+                    
+                
+               
+
+            
+
+                
